@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		DDC1461623E2261B003C4DBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1461523E2261B003C4DBE /* AppDelegate.m */; };
 		DDC1461923E2261B003C4DBE /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1461823E2261B003C4DBE /* SceneDelegate.m */; };
-		DDC1461C23E2261B003C4DBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1461B23E2261B003C4DBE /* ViewController.m */; };
 		DDC1461F23E2261B003C4DBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC1461D23E2261B003C4DBE /* Main.storyboard */; };
 		DDC1462123E2261C003C4DBE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDC1462023E2261C003C4DBE /* Assets.xcassets */; };
 		DDC1462423E2261C003C4DBE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDC1462223E2261C003C4DBE /* LaunchScreen.storyboard */; };
 		DDC1462723E2261C003C4DBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1462623E2261C003C4DBE /* main.m */; };
+		DDC1463323E22978003C4DBE /* ContactsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1463223E22978003C4DBE /* ContactsTableViewController.m */; };
+		DDC1463623E22991003C4DBE /* AddContactViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1463523E22991003C4DBE /* AddContactViewController.m */; };
+		DDC1463923E22A9D003C4DBE /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1463823E22A9D003C4DBE /* Contact.m */; };
+		DDC1463C23E22AAF003C4DBE /* ContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDC1463B23E22AAF003C4DBE /* ContactController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,13 +25,19 @@
 		DDC1461523E2261B003C4DBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		DDC1461723E2261B003C4DBE /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		DDC1461823E2261B003C4DBE /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		DDC1461A23E2261B003C4DBE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DDC1461B23E2261B003C4DBE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		DDC1461E23E2261B003C4DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDC1462023E2261C003C4DBE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDC1462323E2261C003C4DBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDC1462523E2261C003C4DBE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDC1462623E2261C003C4DBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DDC1463123E22978003C4DBE /* ContactsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsTableViewController.h; sourceTree = "<group>"; };
+		DDC1463223E22978003C4DBE /* ContactsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsTableViewController.m; sourceTree = "<group>"; };
+		DDC1463423E22991003C4DBE /* AddContactViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddContactViewController.h; sourceTree = "<group>"; };
+		DDC1463523E22991003C4DBE /* AddContactViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddContactViewController.m; sourceTree = "<group>"; };
+		DDC1463723E22A9D003C4DBE /* Contact.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		DDC1463823E22A9D003C4DBE /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		DDC1463A23E22AAF003C4DBE /* ContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactController.h; sourceTree = "<group>"; };
+		DDC1463B23E22AAF003C4DBE /* ContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,19 +70,57 @@
 		DDC1461323E2261B003C4DBE /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				DDC1461423E2261B003C4DBE /* AppDelegate.h */,
-				DDC1461523E2261B003C4DBE /* AppDelegate.m */,
-				DDC1461723E2261B003C4DBE /* SceneDelegate.h */,
-				DDC1461823E2261B003C4DBE /* SceneDelegate.m */,
-				DDC1461A23E2261B003C4DBE /* ViewController.h */,
-				DDC1461B23E2261B003C4DBE /* ViewController.m */,
-				DDC1461D23E2261B003C4DBE /* Main.storyboard */,
+				DDC1463023E226BB003C4DBE /* Storyboards */,
+				DDC1462F23E226AB003C4DBE /* ViewControllers */,
+				DDC1462E23E226A6003C4DBE /* Model */,
+				DDC1462D23E2268E003C4DBE /* Resources */,
 				DDC1462023E2261C003C4DBE /* Assets.xcassets */,
-				DDC1462223E2261C003C4DBE /* LaunchScreen.storyboard */,
 				DDC1462523E2261C003C4DBE /* Info.plist */,
 				DDC1462623E2261C003C4DBE /* main.m */,
 			);
 			path = Contacts;
+			sourceTree = "<group>";
+		};
+		DDC1462D23E2268E003C4DBE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DDC1461423E2261B003C4DBE /* AppDelegate.h */,
+				DDC1461523E2261B003C4DBE /* AppDelegate.m */,
+				DDC1461723E2261B003C4DBE /* SceneDelegate.h */,
+				DDC1461823E2261B003C4DBE /* SceneDelegate.m */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDC1462E23E226A6003C4DBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DDC1463723E22A9D003C4DBE /* Contact.h */,
+				DDC1463823E22A9D003C4DBE /* Contact.m */,
+				DDC1463A23E22AAF003C4DBE /* ContactController.h */,
+				DDC1463B23E22AAF003C4DBE /* ContactController.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DDC1462F23E226AB003C4DBE /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DDC1463123E22978003C4DBE /* ContactsTableViewController.h */,
+				DDC1463223E22978003C4DBE /* ContactsTableViewController.m */,
+				DDC1463423E22991003C4DBE /* AddContactViewController.h */,
+				DDC1463523E22991003C4DBE /* AddContactViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		DDC1463023E226BB003C4DBE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				DDC1462223E2261C003C4DBE /* LaunchScreen.storyboard */,
+				DDC1461D23E2261B003C4DBE /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,9 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDC1461C23E2261B003C4DBE /* ViewController.m in Sources */,
+				DDC1463C23E22AAF003C4DBE /* ContactController.m in Sources */,
 				DDC1461623E2261B003C4DBE /* AppDelegate.m in Sources */,
 				DDC1462723E2261C003C4DBE /* main.m in Sources */,
+				DDC1463323E22978003C4DBE /* ContactsTableViewController.m in Sources */,
+				DDC1463623E22991003C4DBE /* AddContactViewController.m in Sources */,
+				DDC1463923E22A9D003C4DBE /* Contact.m in Sources */,
 				DDC1461923E2261B003C4DBE /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +339,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HG3WUJ8982;
 				INFOPLIST_FILE = Contacts/Info.plist;
@@ -306,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HG3WUJ8982;
 				INFOPLIST_FILE = Contacts/Info.plist;

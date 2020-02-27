@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+@class Contact;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface ContactController : NSObject
+@property(retain, nonatomic) NSArray<Contact *> *contacts;
 
+- (void)createContactWithName:(NSString *)name email:(NSString *)email phoneNumber:(NSString *)phoneNumber;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -9,6 +9,9 @@
 #import "AddContactViewController.h"
 
 @interface AddContactViewController ()
+@property (retain, nonatomic) IBOutlet UITextField *nameTextfield;
+@property (retain, nonatomic) IBOutlet UITextField *emailTextfield;
+@property (retain, nonatomic) IBOutlet UITextField *phoneTextfield;
 
 @end
 
@@ -19,14 +22,20 @@
     // Do any additional setup after loading the view.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)saveButton:(UIBarButtonItem *)sender {
+    NSString *name = [[self nameTextfield] text];
+    NSString *phoneNumber = [[self phoneTextfield] text];
+    NSString *email = [[self emailTextfield] text];
+    
 }
-*/
 
+
+
+
+- (void)dealloc {
+    [_nameTextfield release];
+    [_emailTextfield release];
+    [_phoneTextfield release];
+    [super dealloc];
+}
 @end
